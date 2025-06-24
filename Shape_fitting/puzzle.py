@@ -36,7 +36,7 @@ def solve_puzzle(W, H, shapes):
     ### NO OVERLAPS ###
     cell_to_vars = {}
 
-    # Check which variables (shapes) use the same cell
+    # Check which variables (placements) use the same cell
     for (id, dx, dy), var in placement_to_var.items():
         # Retrive actual placement of this shape -> exact position (cell) of each unit of the shape
         for x, y in shapes[id]:
