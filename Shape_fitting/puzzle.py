@@ -22,7 +22,7 @@ def solve_puzzle(W, H, shapes):
                 curr_var += 1
 
 
-    ### USING EVERY SHAPE ONCE ###
+    ### USING EVERY SHAPE EXACTLY ONCE ###
     for shape_id in range(len(shapes)):
         # Retrieve all placement variables of this shape
         vars_for_shape = [var for (id, _, _), var in placement_to_var.items() if id == shape_id]
